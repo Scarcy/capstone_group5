@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  spark-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./db_cass.zip:/capstone/db_cass.zip
+      - ./pums:/capstone/pums
+      - ./data:/capstone/data
+    environment:
+      - SPARK_CONF_DIR=/capstone/spark-conf
+    command: >
+      --packages com.datastax.spark:spark-cassandra-connector_2.12:3.5.1
+      --class no.hiof.scala_pums.Main
+      --master local[*]
+      --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp"
+      --conf spark.files="/capstone/db_cass.zip"
+      --conf spark.cassandra.connection.config.cloud.path="db_cass.zip"
+      --conf spark.cassandra.auth.username="sMYoJnAzOkNlHaAZEDwHarZT"
+      --conf spark.cassandra.auth.password="BOTWi_5rvuh,ZjWpg8lOEzT8s4UpU6kSfqN,JFx1,Kek2XrWLTuNoB4PHysU0LRhcIgdX_Xdj-M6PJZxFoCp5BATil7h5hGzMKpnsS5x21rCK3qnobPfFOA3LrcLv6xn"
+      --conf spark.dse.continousPagingEnabled="false"
+      /capstone/pums/target/scala-2.12/capstone_2.12-0.1.jar

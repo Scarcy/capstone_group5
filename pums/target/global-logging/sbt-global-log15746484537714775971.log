@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(package, Some(81f511fa-0fd8-4667-a2a3-30044e97ebef), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / package[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/ellefsen/school/bigdata/sparkContainer/pums/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/sparkContainer/pums/src/main/scala/no/hiof/scala_pums/Main.scala:60:31: overloaded method value groupBy with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (col1: String,cols: String*)org.apache.spark.sql.RelationalGroupedDataset <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (cols: org.apache.spark.sql.Column*)org.apache.spark.sql.RelationalGroupedDataset[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (org.apache.spark.sql.Column, String)[0m
+[0m[[0m[31merror[0m] [0m[0m    val education_data = myDf.groupBy(lit("Alabama").as("state_name"), "SCHL").agg([0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Nov 18, 2024, 10:04:57 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

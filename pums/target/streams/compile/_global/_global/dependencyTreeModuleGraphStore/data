@@ -1,0 +1,1 @@
+{"$fields":["nodes","edges"],"nodes":[{"$fields":["id","license","extraInfo","evictedByVersion","jarFile","error"],"id":{"$fields":["organization","name","version"],"organization":"scala_pums","name":"scala_pums_2.12","version":"0.1"},"extraInfo":" [S]"}],"edges":[]}
