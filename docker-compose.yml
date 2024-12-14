@@ -22,3 +22,21 @@ services:
       --conf spark.cassandra.auth.password="BOTWi_5rvuh,ZjWpg8lOEzT8s4UpU6kSfqN,JFx1,Kek2XrWLTuNoB4PHysU0LRhcIgdX_Xdj-M6PJZxFoCp5BATil7h5hGzMKpnsS5x21rCK3qnobPfFOA3LrcLv6xn"
       --conf spark.dse.continousPagingEnabled="false"
       /capstone/pums/target/scala-2.12/capstone_2.12-0.1.jar
+
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j_db
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    # environment:
+    # NEO4J_AUTH: neo4j/
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - neo4j_import:/import
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  neo4j_import:
