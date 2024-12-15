@@ -11,8 +11,10 @@ services:
       - ./data:/capstone/data
     environment:
       - SPARK_CONF_DIR=/capstone/spark-conf
+    networks:
+      - shared_net
     command: >
-      --packages com.datastax.spark:spark-cassandra-connector_2.12:3.5.1
+      --packages com.datastax.spark:spark-cassandra-connector_2.12:3.5.1,org.neo4j:neo4j-connector-apache-spark_2.12:5.3.2_for_spark_3
       --class no.hiof.scala_pums.Main
       --master local[*]
       --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp"
@@ -36,7 +38,14 @@ services:
       - neo4j_logs:/logs
       - neo4j_import:/import
 
+    networks:
+      - shared_net
+
 volumes:
   neo4j_data:
   neo4j_logs:
   neo4j_import:
+
+networks:
+  shared_net:
+    driver: bridge

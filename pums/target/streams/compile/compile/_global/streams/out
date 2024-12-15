@@ -1,10 +1,19 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Spark.scala:5:25: not found: type SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m  def getSparkConfig(): SparkSession = {[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Spark.scala:6:25: not found: type SparkConf[0m
-[0m[[0m[31merror[0m] [0m[0m    val sparkConf = new SparkConf()[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Spark.scala:10:17: not found: value SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m    val spark = SparkSession.builder()[0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Neo4j.scala:92:32: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m      .withColumn("source.id", $"uid")[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Neo4j.scala:94:34: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m      .withColumn("source.race", $"victim_race")[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Neo4j.scala:95:33: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m      .withColumn("source.sex", $"victim_sex")[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Neo4j.scala:96:33: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m      .withColumn("source.age", $"victim_age")[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Neo4j.scala:97:32: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m      .withColumn("target.id", $"uid")[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ellefsen/school/bigdata/capstone/pums/src/main/scala/no/hiof/scala_pums/Neo4j.scala:98:31: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m      .withColumn("rel.city", $"city")[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m

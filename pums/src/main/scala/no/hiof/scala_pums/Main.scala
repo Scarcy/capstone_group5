@@ -23,6 +23,7 @@ object Main {
 
     Spark.test_connection(myDf1, myDf2, spark)
 
+    Neo4j.testSpark()
     // myDf1.show()
     // myDf2.show()
 
