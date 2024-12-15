@@ -1,1 +1,21 @@
-[debug] Jar uptodate: /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/capstone_2.12-0.1.jar
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/capstone_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no/hiof[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no/hiof[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no/hiof/scala_pums[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no/hiof/scala_pums[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no/hiof/scala_pums/Neo4j.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no/hiof/scala_pums/Neo4j.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no/hiof/scala_pums/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no/hiof/scala_pums/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no/hiof/scala_pums/Spark.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no/hiof/scala_pums/Spark.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no/hiof/scala_pums/Spark$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no/hiof/scala_pums/Spark$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no/hiof/scala_pums/Neo4j$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no/hiof/scala_pums/Neo4j$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	no/hiof/scala_pums/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/ellefsen/school/bigdata/capstone/pums/target/scala-2.12/classes/no/hiof/scala_pums/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
